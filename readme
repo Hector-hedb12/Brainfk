@@ -1,0 +1,28 @@
+Grupo 14:
+
+     Integrantes:
+                Hector Dominguez 09-10241
+                Miguel Fagundez  09-10264
+Detalles:
+
+* Aunque el enunciado especifica que el predicado cargar/2 debia unificar a una lista de 
+caracteres el contenido del archivo, se tomo la decision de unificar esta lista a una lista 
+de codigos ASCII, pues esto permitiria operar directamente el contenido en las cinta para las
+operaciones de Lectura y Escritura.
+
+* Fue utilizada la funcion read_file_to_codes que facilita lo especificado en el punto anterior,
+dado el nombre del archivo y una lista de opciones, que en nuestro caso es [].
+
+* Se decidio no filtrar, la lista unificada por la funcion mencionada anteriomente pues como el 
+enunciado lo especifica, cualquier otro caracter distinto a los especificado sera tomado como 
+comentario.
+
+* Fueron usadas las siguientes funciones auxiliares:
+- ejecutarinstr / 5: Ejecuta la instruccion que se encuentra en la casilla actual de la cinta.
+- buscarUlt / 2 : Dada una lista, unifica en el segundo argumento el ultimo elemento de la lista.
+- omitirit / 3 : Omite todas las instrucciones hasta encontrar la instruccion ]
+- hacerlista / 3 : Crea una lista con las instrucciones que hay hasta encontrar el par ] que cierra con el
+                   primer [ encontrado, que nos ayuda a manejar las iteraciones
+
+* Se decidio pedir al usuario el tamaño de la cinta a utilizar, ya que de esto depende que funcione
+para cada caso de prueba particular.
